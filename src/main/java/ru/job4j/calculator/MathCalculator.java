@@ -7,18 +7,18 @@ public class MathCalculator {
         return sum(first, second) + multiply(first, second);
     }
 
-    public static double sumMinDel(double first, double second) {
+    public static double minAndDiv(double first, double second) {
         return min(first, second) + div(first, second);
     }
 
-    public static double sumMax (double first, double second){
-        return sum(first, second) + multiply(first, second) +
-                min(first, second) + div(first, second);
+    public static double sumAll(double first, double second) {
+        return sum(first, second) + multiply(first, second)
+                + min(first, second) + div(first, second);
     }
 
     public static void main(String[] args) {
         System.out.println("Результат расчета равен: " + sumAndMultiply(50, 20));
-        System.out.println("Результат расчета равен: " + sumMinDel(50, 20));
-        System.out.println("Результат расчета равен: " + sumMax(50, 20));
+        System.out.println("Результат расчета равен: " + minAndDiv(50, 20));
+        System.out.println("Результат расчета равен: " + sumAll(50, 20));
     }
 }
