@@ -3,7 +3,7 @@ package ru.job4j.condition;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class ThreeMaxTest  {
+public class ThreeMaxTest {
     @Test
     public void firstMax() {
         int first = 10;
