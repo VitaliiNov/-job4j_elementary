@@ -39,7 +39,7 @@ public class PointTest {
     }
 
     @Test
-    public void when810to44then18() {
+    public void whenMinus810to1010then18() {
         double expected = 18;
         int x1 = -8;
         int y1 = 10;
