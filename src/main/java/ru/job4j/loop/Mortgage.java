@@ -5,7 +5,7 @@ public class Mortgage {
         int year = 0;
         while (0 < amount) {
             year++;
-            amount = amount + amount * percent / 100 - salary;
+            amount += amount * percent / 100 - salary;
         }
         return year;
     }
