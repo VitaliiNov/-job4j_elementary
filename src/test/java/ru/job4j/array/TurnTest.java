@@ -3,7 +3,7 @@ package ru.job4j.array;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class TurnTest {
+public class TurnTest  {
     @Test
     public void whenTurnArrayWithEvenAmountOfElementsThenTurnedArray() {
         int[] input = new int[]{4, 1, 6, 2};
