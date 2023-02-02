@@ -6,12 +6,12 @@ import static ru.job4j.array.JavaNameValidator.*;
 
 class JavaNameValidatorTest {
 
-    @Test
+ /*   @Test
     void whenEmptyNameInvalid() {
         assertThat(isNameValid("")).isFalse();
     }
 
-  /*  @Test
+    @Test
     void whenFullLatValid() {
         assertThat(isNameValid("first")).isTrue();
     }

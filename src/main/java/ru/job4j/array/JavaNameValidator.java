@@ -5,12 +5,12 @@ public class JavaNameValidator {
         boolean valid = true;
         for (int i = 0; i < name.length(); i++) {
             int code = name.codePointAt(i);
-            if (code == 36 || code == 95) {
+            if (code == 36 || code == 95 || code < 65 || code > 91 && code < 97 || code > 122) {
                 valid = false;
                 break;
             }
         }
-        return false;
+        return valid;
     }
 
     public static boolean isSpecialSymbol(int code) {
