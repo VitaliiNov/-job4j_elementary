@@ -31,4 +31,46 @@ class MaxTest {
         int expected = 6;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    void whenMax6To6TO7Then7() {
+        double left = 6;
+        double right = 6;
+        double forward = 7;
+        double result = Max.max(left, right, forward);
+        double expected = 7;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenMax6To6TO8Then8() {
+        int left = 6;
+        int right = 6;
+        int forward = 8;
+        int result = Max.max(left, right, forward);
+        int expected = 8;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenMax6To6To9Then9() {
+        String hellow = " ";
+        int left = 6;
+        int right = 6;
+        int forward = 9;
+        int result = Max.max(hellow, left, right, forward);
+        int expected = 9;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenMax610To6To9Then9() {
+        String hellow = " ";
+        int left = 10;
+        int right = 6;
+        int forward = 9;
+        int result = Max.max(left, right, forward, hellow);
+        int expected = 10;
+        assertThat(result).isEqualTo(expected);
+    }
 }
