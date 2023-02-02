@@ -6,7 +6,7 @@ import static ru.job4j.array.JavaNameValidator.*;
 
 class JavaNameValidatorTest {
 
- /*   @Test
+    @Test
     void whenEmptyNameInvalid() {
         assertThat(isNameValid("")).isFalse();
     }
@@ -44,5 +44,5 @@ class JavaNameValidatorTest {
     @Test
     void whenLatNumberAndTwoSpecialSymbolsUnderValid() {
         assertThat(isNameValid("fir$t_u$er_1")).isTrue();
-    } */
+    }
 }
