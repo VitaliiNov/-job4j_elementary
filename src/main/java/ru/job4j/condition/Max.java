@@ -9,17 +9,15 @@ public class Max {
         return left > right ? left : right;
     }
 
-        public static int max(int left, int right, int forward) {
-            if (left > right && left > forward) {
-                return left;
-            } else if (right > left && right > forward) {
-                return right;
-            } else {
-                return forward;
-            }
-        }
+    public static int max(int left, int right, int forward) {
+        return max(left, right) > forward ? max(left, right) : forward;
+    }
 
     public static int max(int black, int left, int right, int forward) {
+        return max(left, right, forward) > black ? max(left, right, forward) : black;
+    }
+
+    public static int max(byte left, byte right, byte forward, byte black) {
         if (left > right && left > forward) {
             return left;
         } else if (right > left && right > forward) {
@@ -27,16 +25,6 @@ public class Max {
         } else {
             return forward;
         }
-    }
-
-        public static int max(byte left, byte right, byte forward, byte black) {
-            if (left > right && left > forward) {
-                return left;
-            } else if (right > left && right > forward) {
-                return right;
-            } else {
-                return forward;
-            }
     }
 
     public static void main(String[] args) {
