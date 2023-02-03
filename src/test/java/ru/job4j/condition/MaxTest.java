@@ -53,24 +53,24 @@ class MaxTest {
     }
 
     @Test
-    void whenMax6To6To9Then9() {
-        String hellow = " ";
+    void whenMax2To6To6To9Then9() {
+        int black = 2;
         int left = 6;
         int right = 6;
         int forward = 9;
-        int result = Max.max(hellow, left, right, forward);
+        int result = Max.max(black,left, right, forward);
         int expected = 9;
         assertThat(result).isEqualTo(expected);
     }
 
     @Test
-    void whenMax610To6To9Then9() {
-        String hellow = " ";
-        int left = 10;
-        int right = 6;
-        int forward = 9;
-        int result = Max.max(left, right, forward, hellow);
-        int expected = 10;
+    void whenMax1To10To6To9Then10() {
+        byte black = 1;
+        byte left = 10;
+        byte right = 6;
+        byte forward = 9;
+        byte result = (byte) Max.max(left, right, forward, black);
+        byte expected = 10;
         assertThat(result).isEqualTo(expected);
     }
 }

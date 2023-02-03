@@ -6,13 +6,7 @@ public class Max {
     }
 
     public static double max(double left, double right, double forward) {
-        if (left > right && left > forward) {
-            return left;
-        } else if (right > left && right > forward) {
-            return right;
-        } else {
-            return forward;
-        }
+        return left > right ? left : right;
     }
 
         public static int max(int left, int right, int forward) {
@@ -25,7 +19,7 @@ public class Max {
             }
         }
 
-    public static int max(String hello, int left, int right, int forward) {
+    public static int max(int black, int left, int right, int forward) {
         if (left > right && left > forward) {
             return left;
         } else if (right > left && right > forward) {
@@ -35,7 +29,7 @@ public class Max {
         }
     }
 
-        public static int max(int left, int right, int forward, String hello) {
+        public static int max(byte left, byte right, byte forward, byte black) {
             if (left > right && left > forward) {
                 return left;
             } else if (right > left && right > forward) {
