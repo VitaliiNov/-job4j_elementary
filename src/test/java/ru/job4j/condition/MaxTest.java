@@ -3,7 +3,7 @@ package ru.job4j.condition;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class MaxTest  {
+class MaxTest {
 
     @Test
     void whenMax1To2Then2() {
@@ -58,7 +58,7 @@ class MaxTest  {
         int left = 6;
         int right = 6;
         int forward = 9;
-        int result = Max.max(black,left, right, forward);
+        int result = Max.max(black, left, right, forward);
         int expected = 9;
         assertThat(result).isEqualTo(expected);
     }
