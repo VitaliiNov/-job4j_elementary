@@ -36,8 +36,7 @@ class MaxTest {
     void whenMax6To6TO7Then7() {
         double left = 6;
         double right = 6;
-        double forward = 7;
-        double result = Max.max(left, right, forward);
+        double result = Max.max(left, right);
         double expected = 6;
         assertThat(result).isEqualTo(expected);
     }
@@ -64,12 +63,11 @@ class MaxTest {
     }
 
     @Test
-    void whenMax1To10To6To9Then10() {
-        byte black = 1;
+    void whenMax10To6To9Then10() {
         byte left = 10;
         byte right = 6;
         byte forward = 9;
-        byte result = (byte) Max.max(left, right, forward, black);
+        byte result = (byte) Max.max(left, right, forward);
         byte expected = 10;
         assertThat(result).isEqualTo(expected);
     }

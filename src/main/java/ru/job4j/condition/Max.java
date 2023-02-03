@@ -5,19 +5,19 @@ public class Max {
         return left > right ? left : right;
     }
 
-    public static double max(double left, double right, double forward) {
+    public static double max(double left, double right) {
         return left > right ? left : right;
     }
 
     public static int max(int left, int right, int forward) {
-        return max(left, right) > forward ? max(left, right) : forward;
+        return max(left, max(right, forward));
     }
 
     public static int max(int black, int left, int right, int forward) {
-        return max(left, right, forward) > black ? max(left, right, forward) : black;
+        return max(black, max(left, right, forward));
     }
 
-    public static int max(byte left, byte right, byte forward, byte black) {
+    public static int max(byte left, byte right, byte forward) {
         if (left > right && left > forward) {
             return left;
         } else if (right > left && right > forward) {
